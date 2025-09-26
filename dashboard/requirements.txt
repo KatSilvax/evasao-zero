@@ -1,1 +1,5 @@
 # Lista de bibliotecas Python que o projeto precisa.
+
+pandas
+streamlit
+plotly
