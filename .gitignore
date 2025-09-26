@@ -1,0 +1,14 @@
+# Ambiente virtual
+.venv/
+venv/
+
+# Arquivos temporários do Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Arquivos de Jupyter
+.ipynb_checkpoints/
+
+# Outros
+.DS_Store
