@@ -1,14 +1,22 @@
+# Criar um .gitignore mais limpo
+cat > .gitignore << EOF
 # Ambiente virtual
 .venv/
 venv/
 
-# Arquivos temporários do Python
+# Arquivos Python
 __pycache__/
 *.pyc
 *.pyo
+*.py[cod]
 
-# Arquivos de Jupyter
-.ipynb_checkpoints/
+# Ambiente
+.env/
+.envrc
+.env.local
 
 # Outros
 .DS_Store
+*.log
+.ipynb_checkpoints/
+EOF
