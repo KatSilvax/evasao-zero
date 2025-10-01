@@ -17,7 +17,7 @@ st.set_page_config(
 # Função para carregar os dados (com cache para melhor performance)
 @st.cache_data
 def carregar_dados():
-    caminho_dados = os.path.join('..', 'data', 'dados_limpos.csv')
+    caminho_dados = os.path.join('data', 'dados_limpos.csv')
     try:
         df = pd.read_csv(caminho_dados)
         return df
@@ -32,10 +32,12 @@ if df is None:
     st.stop()
 
 
-# Barra Lateral (Sidebar)
-st.sidebar.image(os.path.join('..', 'assets', 'logo.jpg'), use_column_width=True)
-st.sidebar.header("Filtros")
-# Adicionar filtros aqui no futuro (ex: por curso, por período)
+try:
+    st.sidebar.image(os.path.join('assets', 'logo.jpg'), use_container_width=True)  # Corrigido
+except:
+    st.sidebar.warning("Logo não encontrado")
+
+    st.sidebar.header("Filtros")
 
 
 # Título Principal
