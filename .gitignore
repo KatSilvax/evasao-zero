@@ -1,9 +1,3 @@
-# Criar um .gitignore mais limpo
-cat > .gitignore << EOF
-# Ambiente virtual
-.venv/
-venv/
-
 # Arquivos Python
 __pycache__/
 *.pyc
