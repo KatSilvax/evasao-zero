@@ -1,6 +1,8 @@
 from huggingface_hub import HfApi
 import os
-from dotenv import loadl_dotenv, dotenv_values
+from dotenv import load_dotenv, dotenv_values
+
+load_dotenv()
 
 api = HfApi(token=os.getenv("HF_TOKEN"))
 api.upload_folder(
