@@ -16,3 +16,10 @@ __pycache__/
 EOF
 .venv
 .csv
+
+scripts/.env
+data/processed/* 
+data/raw/*
+
+
+
