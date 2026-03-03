@@ -1,79 +1,65 @@
-#################################################################################
-# GLOBALS                                                                       #
-#################################################################################
+.PHONY: help install sync data train dashboard test lint format clean docs
 
-PROJECT_NAME = evasao-zero
-PYTHON_VERSION = 3.13
-PYTHON_INTERPRETER = python
+help: ## Mostra esta mensagem de ajuda
+	@echo "Comandos disponíveis:"
+	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[36m%-15s\033[0m %s\n", $$1, $$2}'
 
-#################################################################################
-# COMMANDS                                                                      #
-#################################################################################
+install: ## Instala o uv (gerenciador de pacotes)
+	@echo "Instalando uv..."
+	@powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
 
+sync: ## Sincroniza dependências com uv
+	@echo "Sincronizando dependências..."
+	@uv sync
 
-## Install Python dependencies
-.PHONY: requirements
-requirements:
-	$(PYTHON_INTERPRETER) -m pip install -U pip
-	$(PYTHON_INTERPRETER) -m pip install -r requirements.txt
-	
+data: ## Baixa o dataset do HuggingFace
+	@echo "Baixando dataset..."
+	@uv run python scripts/download_dataset.py
 
+process: ## Processa os microdados do INEP
+	@echo "Processando microdados..."
+	@uv run python scripts/processar_microdados.py
 
+train: ## Treina o modelo (via notebook)
+	@echo "Execute: notebooks/02_treinamento_do_modelo.ipynb"
 
-## Delete all compiled Python files
-.PHONY: clean
-clean:
-	find . -type f -name "*.py[co]" -delete
-	find . -type d -name "__pycache__" -delete
+dashboard: ## Inicia o dashboard Streamlit
+	@echo "Iniciando dashboard..."
+	@uv run streamlit run deployments/dashboard/app.py
 
+test: ## Executa os testes
+	@echo "Executando testes..."
+	@uv run pytest tests/ -v
 
-## Lint using ruff (use `make format` to do formatting)
-.PHONY: lint
-lint:
-	ruff format --check
-	ruff check
+test-cov: ## Executa testes com cobertura
+	@echo "Executando testes com cobertura..."
+	@uv run pytest tests/ --cov=src --cov-report=html
 
-## Format source code with ruff
-.PHONY: format
-format:
-	ruff check --fix
-	ruff format
+lint: ## Verifica código com ruff
+	@echo "Verificando código..."
+	@uv run ruff check src/ scripts/ tests/
 
+format: ## Formata código com ruff
+	@echo "Formatando código..."
+	@uv run ruff format src/ scripts/ tests/
 
+docs: ## Serve a documentação localmente
+	@echo "Servindo documentação..."
+	@uv run mkdocs serve
 
+docs-build: ## Build da documentação
+	@echo "Building documentação..."
+	@uv run mkdocs build
 
+clean: ## Remove arquivos temporários
+	@echo "Limpando arquivos temporários..."
+	@rm -rf .pytest_cache __pycache__ .ruff_cache
+	@find . -type d -name "__pycache__" -exec rm -rf {} +
+	@find . -type f -name "*.pyc" -delete
 
-## Set up Python interpreter environment
-.PHONY: create_environment
-create_environment:
-	
-	conda create --name $(PROJECT_NAME) python=$(PYTHON_VERSION) -y
-	
-	@echo ">>> conda env created. Activate with:\nconda activate $(PROJECT_NAME)"
-	
+setup: sync data ## Setup completo do projeto
+	@echo "✅ Projeto configurado com sucesso!"
+	@echo "Execute 'make dashboard' para iniciar o dashboard"
 
-
-
-#################################################################################
-# PROJECT RULES                                                                 #
-#################################################################################
-
-
-
-#################################################################################
-# Self Documenting Commands                                                     #
-#################################################################################
-
-.DEFAULT_GOAL := help
-
-define PRINT_HELP_PYSCRIPT
-import re, sys; \
-lines = '\n'.join([line for line in sys.stdin]); \
-matches = re.findall(r'\n## (.*)\n[\s\S]+?\n([a-zA-Z_-]+):', lines); \
-print('Available rules:\n'); \
-print('\n'.join(['{:25}{}'.format(*reversed(match)) for match in matches]))
-endef
-export PRINT_HELP_PYSCRIPT
-
-help:
-	@$(PYTHON_INTERPRETER) -c "${PRINT_HELP_PYSCRIPT}" < $(MAKEFILE_LIST)
+all: sync test lint ## Executa sync, testes e lint
+	@echo "✅ Tudo pronto!"

@@ -15,11 +15,11 @@ st.set_page_config(
 
 @st.cache_data
 def carregar_dados():
-    # CORREÇÃO: Usar caminho absoluto ou verificar estrutura de pastas
+    # Caminhos corretos quando executado de dentro da pasta dashboard
     caminhos_tentativos = [
+        '../../data/dados_limpos.csv',  # Subir 2 níveis
         'data/dados_limpos.csv',
-        '../data/dados_limpos.csv',
-        './data/dados_limpos.csv'
+        os.path.join(os.path.dirname(__file__), '..', '..', 'data', 'dados_limpos.csv')
     ]
     
     for caminho in caminhos_tentativos:
@@ -34,17 +34,17 @@ def carregar_dados():
 
 @st.cache_resource
 def carregar_modelo():
-    # CORREÇÃO: Verificar múltiplos caminhos possíveis
+    # Caminhos corretos quando executado de dentro da pasta dashboard
     caminhos_modelo = [
-        'modelo_evasao.joblib',
-        '../dashboard/modelo_evasao.joblib',
-        './dashboard/modelo_evasao.joblib'
+        'modelo_evasao.joblib',  # Mesmo diretório
+        '../../models/modelo_evasao.joblib',  # Pasta models
+        os.path.join(os.path.dirname(__file__), 'modelo_evasao.joblib')  # Absoluto
     ]
     
     caminhos_colunas = [
-        'colunas_modelo.joblib', 
-        '../dashboard/colunas_modelo.joblib',
-        './dashboard/colunas_modelo.joblib'
+        'colunas_modelo.joblib',
+        '../../models/colunas_modelo.joblib',
+        os.path.join(os.path.dirname(__file__), 'colunas_modelo.joblib')
     ]
     
     modelo = None
