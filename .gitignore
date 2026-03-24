@@ -1,25 +1,73 @@
-# Arquivos Python
+# Python
 __pycache__/
 *.pyc
 *.pyo
 *.py[cod]
+*.egg-info/
+.venv/
+venv/
 
 # Ambiente
-.env/
-.envrc
+.env
 .env.local
+.envrc
 
-# Outros
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
 .DS_Store
+Thumbs.db
+
+# Logs
 *.log
+
+# Jupyter
 .ipynb_checkpoints/
-EOF
-.venv
-.csv
+*.ipynb
 
-scripts/.env
-data/processed/* 
-data/raw/*
+# Dados brutos (manter apenas processados)
+data/raw/
 
+# Modelos duplicados (manter apenas em models/)
+dashboard/*.joblib
+deployments/dashboard/*.joblib
+deployments/dashboard/colunas_modelo.joblib
+deployments/dashboard/threshold.joblib
 
+# Arquivos de desenvolvimento
+scripts/debug_*.py
+scripts/analise_*.py
+scripts/download_*.py
+scripts/upload_*.py
+scripts/run_*.py
+scripts/installHug.py
 
+# Documentação de desenvolvimento
+COMECE-AQUI.md
+ESTADO-ATUAL.md
+GITHUB-READY.md
+CONTRIBUTING.md
+SETUP.md
+Makefile
+docker-compose.yml
+Dockerfile
+
+# Extensão (não é parte do core)
+deployments/extension/
+
+# Documentação técnica
+docs/
+notebooks/
+reports/
+references/
+
+# Testes
+tests/
+
+# Arquivos de lock
+uv.lock
