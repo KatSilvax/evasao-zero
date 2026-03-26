@@ -1,6 +1,6 @@
 # 🎯 GUIA RÁPIDO - 3 PASSOS
 
-## ✅ PASSO 1: Abrir Terminal
+## ✅ PASSO 1: Abrir Terminal.
 ```
 Pressione: Windows + R
 Digite: cmd

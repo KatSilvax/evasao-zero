@@ -58,7 +58,6 @@ docker-compose.yml
 Dockerfile
 
 # Extensão (não é parte do core)
-deployments/extension/
 
 # Documentação técnica
 docs/

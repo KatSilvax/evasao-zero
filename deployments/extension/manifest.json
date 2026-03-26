@@ -1,0 +1,10 @@
+{
+  "name": "IFMS Evasão Zero",
+  "description": "Extensão para a ferramenta IFMS Evasão Zero",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "images/icon.png"
+  }
+}
