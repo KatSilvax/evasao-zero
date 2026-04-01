@@ -1,6 +1,52 @@
-<html>
-    <body>
-        <h1>IFMS Evasao Zero</h1>
-        <script src="../scripts/popup.js"></script>
-    </body>
-</html>     
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Painel IFMS</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+      <div class="header-main-container">
+	    <div class="topo">
+		  <h1>IFMS Evasão Zero</h1>
+		  <h1 class="zero-title"></h1>
+	    </div>
+
+	    <div class="header-search-block">
+		  <div class="busca-container">
+			<span class="icon-lupa">🔍</span>
+			<input type="text" placeholder="Pesquisar Aluno">
+		  </div>
+	    </div>
+      </div>
+      <div class="main-container">
+	    <div class="lista-alunos">
+		  <h2>Lista de Alunos</h2>
+	    </div>
+
+	    <div class="painel-detalhes">
+		  <div class="indicadores-container">
+
+			<div class="card-grafico">
+			      <p>Notas</p>
+			      <div id="grafico-notas" class="circulo-progresso">
+				    <span id="valor-notas">--%</span>
+			      </div>
+			</div>
+
+			<div class="card-grafico">
+			      <p>Frêquencia</p>
+			      <div id="grafico-frequencia" class="circulo-progresso">
+				    <span id="valor-frequencia">--%</span>
+			      </div>
+			</div>
+		  </div>
+
+		  <div class="obs">
+			<textarea placeholder="Observações"></textarea>
+			<button>Encaminhar para...</button>
+		  </div>
+	    </div>
+      </div>
+</body>
+</html>
