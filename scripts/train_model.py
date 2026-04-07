@@ -9,11 +9,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_FILE = os.path.join(BASE_DIR, "data", "dados_limpos.csv")
 MODELS_DIR = os.path.join(BASE_DIR, "models")
 
-print("🤖 Treinando modelo...")
+print("Treinando modelo...")
 
 # Carregar dados
 df = pd.read_csv(DATA_FILE)
-print(f"✅ {len(df)} registros carregados")
+print(f"{len(df)} registros carregados")
 
 # Preparar dados (exemplo simples)
 # Selecionar apenas colunas numéricas para o exemplo
@@ -31,5 +31,5 @@ os.makedirs(MODELS_DIR, exist_ok=True)
 joblib.dump(model, os.path.join(MODELS_DIR, "modelo_evasao.joblib"))
 joblib.dump(X.columns.tolist(), os.path.join(MODELS_DIR, "colunas_modelo.joblib"))
 
-print(f"✅ Modelo treinado e salvo em {MODELS_DIR}")
-print(f"📊 Acurácia: {model.score(X_test, y_test):.2%}")
+print(f"Modelo treinado e salvo em {MODELS_DIR}")
+print(f"Acuracia: {model.score(X_test, y_test):.2%}")

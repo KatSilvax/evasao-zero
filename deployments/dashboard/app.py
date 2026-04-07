@@ -91,44 +91,33 @@ for path in logo_paths:
         break
 
 if logo_path:
-    st.sidebar.image(logo_path, use_column_width=True)
+    st.sidebar.image(logo_path, use_container_width=True)
 else:
     st.sidebar.warning("Logo não encontrada")
 
-st.sidebar.header("Previsão de Risco Individual")
+st.sidebar.header("Previsão de Risco por Escola")
 
-# Coleta de dados do aluno para previsão
-curso_selecionado = st.sidebar.selectbox("Curso do Aluno", options=df['curso'].unique())
-periodo_selecionado = st.sidebar.slider("Período do Aluno", min_value=1, max_value=10, value=1)
-idade_selecionada = st.sidebar.number_input("Idade do Aluno", min_value=15, max_value=70, value=18)
-genero_selecionado = st.sidebar.selectbox("Gênero", options=df['genero'].unique())
-raca_selecionada = st.sidebar.selectbox("Cor/Raça", options=df['cor_raca'].unique())
-renda_selecionada = st.sidebar.selectbox("Renda Familiar", options=df['renda_familiar'].unique())
-trabalha_selecionado = st.sidebar.selectbox("Trabalha Atualmente?", options=df['trabalha'].unique())
+# Coleta de dados da escola para previsão
+media_inse = st.sidebar.slider("Média INSE", min_value=1.0, max_value=8.0, value=5.0, step=0.1)
+tp_tipo_rede = st.sidebar.selectbox("Tipo de Rede", options=[2, 3], format_func=lambda x: "Estadual" if x == 2 else "Municipal")
+tp_localizacao = st.sidebar.selectbox("Localização", options=[1, 2], format_func=lambda x: "Urbana" if x == 1 else "Rural")
+tp_capital = st.sidebar.selectbox("Capital", options=[1, 2], format_func=lambda x: "Capital" if x == 1 else "Interior")
 
 if st.sidebar.button("Analisar Risco de Evasão"):
-    # Criar um DataFrame com os dados do aluno
-    dados_aluno = pd.DataFrame({
-        'curso': [curso_selecionado],
-        'periodo': [periodo_selecionado],
-        'idade': [idade_selecionada],
-        'genero': [genero_selecionado],
-        'cor_raca': [raca_selecionada],
-        'renda_familiar': [renda_selecionada],
-        'trabalha': [trabalha_selecionado]
-    })
-
-    # Aplicar One-Hot Encoding
-    dados_aluno_encoded = pd.get_dummies(dados_aluno)
-    # Reindexar para garantir que as colunas sejam as mesmas do modelo
-    dados_aluno_final = dados_aluno_encoded.reindex(columns=colunas_modelo, fill_value=0)
-
-    # Fazer a predição
-    predicao = modelo.predict(dados_aluno_final)
-    probabilidade = modelo.predict_proba(dados_aluno_final)
+    dados_escola = pd.DataFrame([{
+        'MEDIA_INSE': media_inse,
+        'PC_NIVEL_1': 0.0, 'PC_NIVEL_2': 0.0, 'PC_NIVEL_3': 0.0, 'PC_NIVEL_4': 0.0,
+        'PC_NIVEL_5': 0.0, 'PC_NIVEL_6': 0.0, 'PC_NIVEL_7': 0.0, 'PC_NIVEL_8': 0.0,
+        'TP_TIPO_REDE': tp_tipo_rede,
+        'TP_LOCALIZACAO': tp_localizacao,
+        'TP_CAPITAL': tp_capital
+    }])
+    dados_escola_final = dados_escola.reindex(columns=colunas_modelo, fill_value=0)
+    predicao = modelo.predict(dados_escola_final)
+    probabilidade = modelo.predict_proba(dados_escola_final)
 
     st.sidebar.subheader("Resultado da Análise:")
-    if predicao[0] == 'Sim':
+    if predicao[0] == 1:
         st.sidebar.error("ALTO RISCO DE EVASÃO")
         st.sidebar.metric("Probabilidade de Risco", f"{probabilidade[0][1]*100:.2f}%")
     else:
@@ -141,14 +130,15 @@ st.markdown("Instituto Federal de Mato Grosso do Sul (IFMS)")
 
 # KPIs
 st.markdown("### Métricas Gerais da Amostra")
-total_alunos = len(df)
-alunos_em_risco = len(df[df['risco_evasao_declarado'] == 'Sim'])
-taxa_risco = (alunos_em_risco / total_alunos) * 100
+total_escolas = len(df)
+df['risco_evasao'] = (df['TAXA_ABANDONO_GERAL'] > 5).astype(int)
+escolas_em_risco = len(df[df['risco_evasao'] == 1])
+taxa_risco = (escolas_em_risco / total_escolas) * 100
 
 col1, col2, col3 = st.columns(3)
-col1.metric("Total de Alunos", f"{total_alunos}")
-col2.metric("Alunos com Risco Declarado", f"{alunos_em_risco}")
-col3.metric("Taxa de Risco Declarado", f"{taxa_risco:.2f}%")
+col1.metric("Total de Escolas", f"{total_escolas}")
+col2.metric("Escolas com Alto Risco", f"{escolas_em_risco}")
+col3.metric("Taxa de Risco", f"{taxa_risco:.2f}%")
 
 st.markdown("---")
 st.markdown("### Visualizações Analíticas")
@@ -156,52 +146,30 @@ st.markdown("### Visualizações Analíticas")
 col_graf1, col_graf2 = st.columns(2)
 
 with col_graf1:
-    # CORREÇÃO: Gráfico 1 - Risco por Curso
-    st.subheader("Risco de Evasão por Curso")
-    
-    # Calcular percentuais corretamente
-    risco_por_curso = df.groupby('curso')['risco_evasao_declarado'].value_counts(normalize=True).mul(100).reset_index(name='percentual')
-    risco_por_curso_sim = risco_por_curso[risco_por_curso['risco_evasao_declarado'] == 'Sim']
-    
-    fig_curso = px.bar(
-        risco_por_curso_sim,
-        x='curso',
-        y='percentual',
-        title="Percentual de Alunos com Risco Declarado por Curso",
-        labels={'percentual': '% de Alunos em Risco', 'curso': 'Curso'},
-        text='percentual'
+    st.subheader("Taxa de Abandono por UF")
+    risco_uf = df.groupby('SG_UF')['TAXA_ABANDONO_GERAL'].mean().reset_index()
+    risco_uf.columns = ['UF', 'Taxa Média de Abandono']
+    fig_uf = px.bar(
+        risco_uf.sort_values('Taxa Média de Abandono', ascending=False).head(15),
+        x='UF', y='Taxa Média de Abandono',
+        title='Top 15 UFs por Taxa Média de Abandono',
+        text='Taxa Média de Abandono'
     )
-    fig_curso.update_traces(texttemplate='%{y:.1f}%', textposition='outside')
-    st.plotly_chart(fig_curso, use_container_width=True)
+    fig_uf.update_traces(texttemplate='%{y:.1f}%', textposition='outside')
+    st.plotly_chart(fig_uf, use_container_width=True)
 
 with col_graf2:
-    # CORREÇÃO: Gráfico 2 - Risco por Renda
-    st.subheader("Risco de Evasão por Renda Familiar")
-    
-    df_renda = df.groupby('renda_familiar')['risco_evasao_declarado'].value_counts(normalize=True).mul(100).reset_index(name='percentual')
-    df_renda_sim = df_renda[df_renda['risco_evasao_declarado'] == 'Sim']
-    
-    # Definir ordem correta das categorias de renda
-    ordem_renda = [
-        'Até 1 salário mínimo (R$ 1.412)',
-        'Entre 1 e 2 salários mínimos (R$ 1.413 - R$ 2.824)',
-        'Entre 2 e 4 salários mínimos (R$ 2.825 - R$ 5.648)',
-        'Mais de 4 salários mínimos (acima de R$ 5.648)'
-    ]
-    
-    # Manter apenas as categorias que existem nos dados
-    ordem_renda = [renda for renda in ordem_renda if renda in df_renda_sim['renda_familiar'].values]
-    
-    fig_renda = px.bar(
-        df_renda_sim,
-        x='renda_familiar',
-        y='percentual',
-        title='Percentual de Risco por Faixa de Renda',
-        labels={'percentual': '% de Alunos em Risco', 'renda_familiar': 'Renda Familiar'},
-        category_orders={"renda_familiar": ordem_renda}
+    st.subheader("Risco por Classificação INSE")
+    risco_inse = df.groupby('INSE_CLASSIFICACAO')['risco_evasao'].mean().mul(100).reset_index()
+    risco_inse.columns = ['Classificação INSE', '% Escolas em Risco']
+    fig_inse = px.bar(
+        risco_inse,
+        x='Classificação INSE', y='% Escolas em Risco',
+        title='% de Escolas em Risco por Nível INSE',
+        text='% Escolas em Risco'
     )
-    fig_renda.update_traces(texttemplate='%{y:.1f}%', textposition='outside')
-    st.plotly_chart(fig_renda, use_container_width=True)
+    fig_inse.update_traces(texttemplate='%{y:.1f}%', textposition='outside')
+    st.plotly_chart(fig_inse, use_container_width=True)
 
 # CORREÇÃO: Adicionar mais visualizações úteis
 st.markdown("---")
@@ -210,29 +178,25 @@ st.markdown("### Distribuição por Outras Características")
 col_graf3, col_graf4 = st.columns(2)
 
 with col_graf3:
-    st.subheader("Risco por Gênero")
-    risco_genero = df.groupby('genero')['risco_evasao_declarado'].value_counts(normalize=True).mul(100).reset_index(name='percentual')
-    risco_genero_sim = risco_genero[risco_genero['risco_evasao_declarado'] == 'Sim']
-    
-    fig_genero = px.pie(
-        risco_genero_sim,
-        values='percentual',
-        names='genero',
-        title='Distribuição do Risco por Gênero'
+    st.subheader("Risco por Tipo de Rede")
+    df['Rede'] = df['TP_TIPO_REDE'].map({1: 'Federal', 2: 'Estadual', 3: 'Municipal', 4: 'Privada'})
+    risco_rede = df.groupby('Rede')['risco_evasao'].mean().mul(100).reset_index()
+    risco_rede.columns = ['Rede', '% Escolas em Risco']
+    fig_rede = px.pie(
+        risco_rede, values='% Escolas em Risco', names='Rede',
+        title='Distribuição do Risco por Tipo de Rede'
     )
-    st.plotly_chart(fig_genero, use_container_width=True)
+    st.plotly_chart(fig_rede, use_container_width=True)
 
 with col_graf4:
-    st.subheader("Risco por Situação de Trabalho")
-    risco_trabalho = df.groupby('trabalha')['risco_evasao_declarado'].value_counts(normalize=True).mul(100).reset_index(name='percentual')
-    risco_trabalho_sim = risco_trabalho[risco_trabalho['risco_evasao_declarado'] == 'Sim']
-    
-    fig_trabalho = px.bar(
-        risco_trabalho_sim,
-        x='trabalha',
-        y='percentual',
-        title='Risco por Situação de Trabalho',
-        labels={'percentual': '% em Risco', 'trabalha': 'Trabalha?'}
+    st.subheader("Risco por Localização")
+    df['Localização'] = df['TP_LOCALIZACAO'].map({1: 'Urbana', 2: 'Rural'})
+    risco_loc = df.groupby('Localização')['risco_evasao'].mean().mul(100).reset_index()
+    risco_loc.columns = ['Localização', '% Escolas em Risco']
+    fig_loc = px.bar(
+        risco_loc, x='Localização', y='% Escolas em Risco',
+        title='Risco por Localização',
+        text='% Escolas em Risco'
     )
-    fig_trabalho.update_traces(texttemplate='%{y:.1f}%', textposition='outside')
-    st.plotly_chart(fig_trabalho, use_container_width=True)
+    fig_loc.update_traces(texttemplate='%{y:.1f}%', textposition='outside')
+    st.plotly_chart(fig_loc, use_container_width=True)

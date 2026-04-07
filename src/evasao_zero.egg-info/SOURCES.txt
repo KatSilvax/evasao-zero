@@ -7,4 +7,3 @@ src/evasao_zero.egg-info/SOURCES.txt
 src/evasao_zero.egg-info/dependency_links.txt
 src/evasao_zero.egg-info/requires.txt
 src/evasao_zero.egg-info/top_level.txt
-tests/test_model.py
