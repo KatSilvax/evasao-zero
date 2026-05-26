@@ -1,0 +1,195 @@
+curso,periodo,idade,cidade,renda_total,trabalha_atualmente,recebe_auxilio_da_insti,ja_pensou_em_desistir,motivo_de_desistencia,motivo_agrupado
+computacao,1,31 a 40 anos,Jardim,entre 1 e 2 salarios minimos,"sim, em periodo integral",ja solicitei e aguardo reposta,"sim, algumas vezes",falta de apoio da familia e dificuldade em conciliar trabalho e estudos,Dificuldade em conciliar trabalho e estudos
+computacao,1,mais de 40 anos,Jardim,ate 1 salario minimo,"sim, em periodo integral",nao,nao nunca,,
+computacao,1,15 a 18 anos,Jardim,nao informado,nao,nao,nao nunca,,
+computacao,1,15 a 18 anos,Guia Lopes,mais de 6 salarios minimos,"sim, em periodo integral",nao,nao nunca,,
+computacao,1,15 a 18 anos,Jardim,entre 1 e 2 salarios minimos,"nao, mas estou procurando",nao,nao nunca,,
+computacao,1,19 a 24 anos,Jardim,entre 4 e 6 salarios minimos,nao,nao,"sim, algumas vezes",problemas de saude,problemas de saude
+computacao,7,19 a 24 anos,Guia Lopes,entre 4 e 6 salarios minimos,"sim, em periodo integral",nao,nao nunca,,
+computacao,1,19 a 24 anos,Bela Vista,nao informado,"nao, mas estou procurando",nao,nao nunca,,
+computacao,1,15 a 18 anos,Bela Vista,nao informado,"sim, em periodo integral",nao,"sim, algumas vezes",dificulade de aprendizado,Dificuldade de aprendizado
+computacao,1,15 a 18 anos,Bela Vista,entre 1 e 2 salarios minimos,"sim, em meio periodo",nao,"sim, algumas vezes",dificuldade de conciliar trabalho e estudos,Dificuldade em conciliar trabalho e estudos
+computacao,1,19 a 24 anos,Jardim,nao informado,"nao, mas estou procurando",ja solicitei e aguardo reposta,nao nunca,,
+computacao,3,31 a 40 anos,Jardim,nao informado,"nao, mas estou procurando",sim,"sim, algumas vezes",dificulade de aprendizado,Dificuldade de aprendizado
+computacao,1,19 a 24 anos,Bela Vista,entre 4 e 6 salarios minimos,"sim, em periodo integral",nao,"sim, algumas vezes",dificulade de aprendizado,Dificuldade de aprendizado
+computacao,1,15 a 18 anos,Jardim,nao informado,nao,nao,nao nunca,,
+computacao,1,25 a 30 anos,Jardim,entre 1 e 2 salarios minimos,"sim, em periodo integral",nao,nao nunca,,
+computacao,1,19 a 24 anos,Jardim,entre 2 e 4 salarios minimos,nao,nao,nao nunca,,
+computacao,1,19 a 24 anos,Jardim,nao informado,"sim, em periodo integral",nao,nao nunca,,
+computacao,1,15 a 18 anos,Guia Lopes,nao informado,"nao, mas estou procurando",nao,"sim, algumas vezes",dificulades financeiras,Dificuldades financeiras
+computacao,1,15 a 18 anos,Jardim,nao informado,nao,nao,"sim, algumas vezes",dificuldades de conciliar trabalho e estudos,Dificuldade em conciliar trabalho e estudos
+computacao,1,15 a 18 anos,Jardim,entre 2 e 4 salarios minimos,"nao, mas estou procurando",nao,nao nunca,,
+computacao,1,15 a 18 anos,Bonito,mais de 6 salarios minimos,nao,nao,nao nunca,,
+computacao,1,15 a 18 anos,Jardim,entre 1 e 2 salarios minimos,nao,nao,nao nunca,,
+computacao,1,19 a 24 anos,Dourados,entre 4 e 6 salarios minimos,"sim, em meio periodo",nao,"sim, varias vezes",distancia,distancia
+computacao,1,mais de 40 anos,Jardim,ate 1 salario minimo,"sim, em meio periodo",ja solicitei e aguardo reposta,"sim, algumas vezes",falta de apoio da familia,falta de apoio da familia
+computacao,1,15 a 18 anos,Guia Lopes,entre 2 e 4 salarios minimos,"nao, mas estou procurando",nao,nao nunca,,
+computacao,5,25 a 30 anos,Nioaque,entre 1 e 2 salarios minimos,"sim, em meio periodo",sim,"sim, algumas vezes",recebi uma proposta de emprego,recebi uma proposta de emprego
+computacao,5,19 a 24 anos,Jardim,entre 2 e 4 salarios minimos,nao,nao,nao nunca,,
+computacao,5,19 a 24 anos,Jardim,ate 1 salario minimo,"sim, em periodo integral",ja solicitei e aguardo reposta,"sim, algumas vezes",dificuldades financeiras,Dificuldades financeiras
+computacao,5,19 a 24 anos,Jardim,entre 2 e 4 salarios minimos,"sim, em periodo integral",nao,"sim, algumas vezes",serviço militar,serviço militar
+computacao,5,19 a 24 anos,Jardim,nao informado,"nao, mas estou procurando",ja solicitei e aguardo reposta,"sim, algumas vezes",problemas de saude,problemas de saude
+computacao,5,19 a 24 anos,Jardim,mais de 6 salarios minimos,"sim, em periodo integral",nao,nao nunca,,
+computacao,7,19 a 24 anos,Bela Vista,ate 1 salario minimo,nao,nao,nao nunca,,
+computacao,3,31 a 40 anos,Guia Lopes,entre 1 e 2 salarios minimos,"nao, mas estou procurando",ja solicitei e aguardo reposta,nao nunca,,
+computacao,7,mais de 40 anos,Bela Vista,entre 4 e 6 salarios minimos,"sim, em periodo integral",nao,"sim, algumas vezes","problemas com a instituiçao, no caso o estagio obrigatorio","problemas com a instituiçao, no caso o estagio obrigatorio"
+computacao,3,31 a 40 anos,Jardim,ate 1 salario minimo,"sim, em periodo integral",ja solicitei e aguardo reposta,"sim, varias vezes",falta de apoio da familia,falta de apoio da familia
+computacao,3,19 a 24 anos,Jardim,entre 4 e 6 salarios minimos,"sim, em periodo integral",nao,"sim, varias vezes",dificuldades de conciliar trabalho eestudos,Dificuldade em conciliar trabalho e estudos
+arquitetura,1,15 a 18 anos,Jardim,entre 1 e 2 salarios minimos,"nao, mas estou procurando",nao,nao nunca,,
+arquitetura,1,31 a 40 anos,Jardim,entre 1 e 2 salarios minimos,nao,nao,nao nunca,,
+arquitetura,1,15 a 18 anos,Jardim,ate 1 salario minimo,nao,nao,nao nunca,,
+arquitetura,1,19 a 24 anos,Jardim,entre 2 e 4 salarios minimos,"sim, em meio periodo",nao,"sim, algumas vezes",dificuldade de conciliar trabalho e estudos,Dificuldade em conciliar trabalho e estudos
+arquitetura,1,15 a 18 anos,Jardim,mais de 6 salarios minimos,"nao, mas estou procurando",nao,"sim, algumas vezes",dificuldade de transporte para o campus,Problemas com transporte
+computacao,3,25 a 30 anos,Jardim,entre 4 e 6 salarios minimos,"sim, em periodo integral",nao,"sim, algumas vezes",dificulades financeiras,Dificuldades financeiras
+computacao,3,31 a 40 anos,Guia Lopes,entre 1 e 2 salarios minimos,"sim, em periodo integral",nao,nao nunca,,
+computacao,3,31 a 40 anos,Jardim,mais de 6 salarios minimos,"sim, em periodo integral",nao,"sim, varias vezes","falta de transporte, horario das aulas",Problemas com transporte
+computacao,7,25 a 30 anos,Jardim,entre 2 e 4 salarios minimos,"sim, em periodo integral",nao,"sim, algumas vezes",problemas de saude,problemas de saude
+computacao,7,25 a 30 anos,Jardim,entre 2 e 4 salarios minimos,"sim, em periodo integral",nao,"sim, algumas vezes",problemas de saude,problemas de saude
+computacao,3,mais de 40 anos,Jardim,entre 4 e 6 salarios minimos,"sim, em periodo integral",nao,"sim, algumas vezes",dificuldade de conciliar trabalho e estudos,Dificuldade em conciliar trabalho e estudos
+informatica,5,15 a 18 anos,Jardim,entre 2 e 4 salarios minimos,nao,nao,nao nunca,,
+informatica,5,15 a 18 anos,Nioaque,entre 2 e 4 salarios minimos,"sim, em meio periodo",sim,"sim, algumas vezes",logistica de transporte,Problemas com transporte
+informatica,5,15 a 18 anos,Jardim,entre 2 e 4 salarios minimos,"sim, em meio periodo",nao,"sim, algumas vezes",problemas de saude,problemas de saude
+informatica,5,15 a 18 anos,Jardim,entre 2 e 4 salarios minimos,nao,sim,nao nunca,,
+informatica,5,15 a 18 anos,Jardim,entre 1 e 2 salarios minimos,"sim, em meio periodo",nao,"sim, algumas vezes",dificuldade de aprendizado,Dificuldade de aprendizado
+informatica,5,15 a 18 anos,Jardim,entre 2 e 4 salarios minimos,"nao, mas estou procurando",nao,"sim, varias vezes",dificuldade de aprendizado,Dificuldade de aprendizado
+informatica,5,15 a 18 anos,Jardim,nao informado,"nao, mas estou procurando",sim,"sim, algumas vezes",dificuldade de conciliar trabalho e estudos,Dificuldade em conciliar trabalho e estudos
+informatica,5,15 a 18 anos,Jardim,nao informado,nao,ja solicitei e aguardo reposta,nao nunca,,
+informatica,5,15 a 18 anos,Jardim,nao informado,nao,sim,"sim, algumas vezes",dificuldade de aprendizado,Dificuldade de aprendizado
+informatica,5,15 a 18 anos,Jardim,entre 2 e 4 salarios minimos,nao,nao,"sim, varias vezes",problemas de relacionamento com os colegas,Problemas de relacionamento com colegas
+informatica,5,15 a 18 anos,Guia Lopes,mais de 6 salarios minimos,nao,nao,"sim, algumas vezes",dificuldade de aprendizado,Dificuldade de aprendizado
+informatica,5,15 a 18 anos,Jardim,entre 1 e 2 salarios minimos,nao,sim,"sim, algumas vezes",dificuldade de aprendizado,Dificuldade de aprendizado
+informatica,5,15 a 18 anos,Jardim,entre 1 e 2 salarios minimos,nao,nao,nao nunca,,
+informatica,5,15 a 18 anos,Jardim,entre 2 e 4 salarios minimos,"sim, em meio periodo",nao,"sim, varias vezes",problemas de saude,problemas de saude
+informatica,5,15 a 18 anos,Jardim,entre 2 e 4 salarios minimos,nao,nao,nao nunca,,
+informatica,5,15 a 18 anos,Jardim,nao informado,nao,nao,nao nunca,,
+informatica,5,15 a 18 anos,Jardim,mais de 6 salarios minimos,nao,nao,nao nunca,,
+informatica,5,15 a 18 anos,Jardim,nao informado,nao,nao,"sim, varias vezes",problemas de saude,problemas de saude
+informatica,5,15 a 18 anos,Jardim,entre 4 e 6 salarios minimos,nao,nao,nao nunca,,
+informatica,5,15 a 18 anos,Jardim,entre 4 e 6 salarios minimos,nao,nao,nao nunca,,
+arquitetura,1,15 a 18 anos,Jardim,entre 4 e 6 salarios minimos,"sim, em meio periodo",nao,nao nunca,,
+informatica,5,15 a 18 anos,Jardim,entre 4 e 6 salarios minimos,nao,sim,nao nunca,,
+informatica,5,15 a 18 anos,Jardim,ate 1 salario minimo,nao,nao,nao nunca,,
+informatica,5,15 a 18 anos,Jardim,entre 1 e 2 salarios minimos,nao,nao,nao nunca,,
+informatica,5,15 a 18 anos,Jardim,mais de 6 salarios minimos,nao,nao,nao nunca,,
+informatica,5,15 a 18 anos,Guia Lopes,entre 2 e 4 salarios minimos,"sim, em meio periodo",sim,nao nunca,,
+informatica,5,15 a 18 anos,Jardim,entre 1 e 2 salarios minimos,nao,ja solicitei e aguardo reposta,nao nunca,,
+informatica,5,15 a 18 anos,Guia Lopes,entre 1 e 2 salarios minimos,"sim, em meio periodo",ja solicitei e aguardo reposta,"sim, algumas vezes",decepçao com a qualidade do curso,decepçao com a qualidade do curso
+informatica,5,15 a 18 anos,Nioaque,mais de 6 salarios minimos,"sim, em meio periodo",nao,nao nunca,,
+edificacoes,1,menos de 15 anos,Jardim,ate 1 salario minimo,"nao, mas estou procurando",nao,nao nunca,,
+edificacoes,1,menos de 15 anos,Jardim,entre 1 e 2 salarios minimos,nao,nao,"sim, algumas vezes",problemas de saude,problemas de saude
+edificacoes,1,menos de 15 anos,Jardim,entre 1 e 2 salarios minimos,nao,ja solicitei e aguardo reposta,"sim, algumas vezes",dificuldade de aprendizado,Dificuldade de aprendizado
+edificacoes,1,15 a 18 anos,Jardim,entre 2 e 4 salarios minimos,nao,nao,nao nunca,,
+edificacoes,1,15 a 18 anos,Jardim,nao informado,nao,nao,nao nunca,,
+edificacoes,1,15 a 18 anos,Jardim,ate 1 salario minimo,"nao, mas estou procurando",ja solicitei e aguardo reposta,"sim, algumas vezes","dificuldade de aprendizado, falta de apoio da fmilia",Dificuldade de aprendizado
+edificacoes,1,15 a 18 anos,Jardim,entre 4 e 6 salarios minimos,"sim, em meio periodo",nao,nao nunca,,
+edificacoes,1,15 a 18 anos,Jardim,entre 2 e 4 salarios minimos,"sim, em meio periodo",ja solicitei e aguardo reposta,nao nunca,,
+edificacoes,1,15 a 18 anos,Guia Lopes,entre 2 e 4 salarios minimos,nao,ja solicitei e aguardo reposta,nao nunca,,
+edificacoes,1,menos de 15 anos,Jardim,ate 1 salario minimo,"nao, mas estou procurando",ja solicitei e aguardo reposta,"sim, varias vezes",dificuldade de aprendizado,Dificuldade de aprendizado
+edificacoes,1,menos de 15 anos,Jardim,mais de 6 salarios minimos,nao,nao,nao nunca,,
+edificacoes,1,menos de 15 anos,Jardim,entre 4 e 6 salarios minimos,nao,nao,nao nunca,,
+edificacoes,1,menos de 15 anos,Jardim,entre 4 e 6 salarios minimos,nao,ja solicitei e aguardo reposta,nao nunca,,
+edificacoes,1,15 a 18 anos,Jardim,entre 2 e 4 salarios minimos,nao,nao,"sim, varias vezes",dificuldade de aprendizado,Dificuldade de aprendizado
+edificacoes,1,15 a 18 anos,Jardim,entre 2 e 4 salarios minimos,nao,nao,"sim, algumas vezes",dificuldade de aprendizado,Dificuldade de aprendizado
+edificacoes,1,15 a 18 anos,Guia Lopes,entre 4 e 6 salarios minimos,nao,nao,nao nunca,,
+edificacoes,1,menos de 15 anos,Jardim,entre 1 e 2 salarios minimos,"nao, mas estou procurando",sim,"sim, varias vezes",dificuldade de aprendizado,Dificuldade de aprendizado
+edificacoes,1,menos de 15 anos,Jardim,entre 1 e 2 salarios minimos,nao,ja solicitei e aguardo reposta,nao nunca,,
+edificacoes,1,menos de 15 anos,Jardim,entre 2 e 4 salarios minimos,"nao, mas estou procurando",nao,"sim, algumas vezes",dificuldade de aprendizado,Dificuldade de aprendizado
+informatica,3,15 a 18 anos,Nioaque,entre 4 e 6 salarios minimos,"nao, mas estou procurando",ja solicitei e aguardo reposta,nao nunca,,
+edificacoes,1,menos de 15 anos,Jardim,entre 2 e 4 salarios minimos,nao,nao,"sim, algumas vezes",dificuldades financeiras,Dificuldades financeiras
+edificacoes,1,menos de 15 anos,Jardim,entre 1 e 2 salarios minimos,nao,nao,"sim, algumas vezes",problemas de relacionamento com os professores,problemas de relacionamento com os professores
+edificacoes,1,15 a 18 anos,Jardim,ate 1 salario minimo,"nao, mas estou procurando",ja solicitei e aguardo reposta,nao nunca,,
+edificacoes,1,menos de 15 anos,Jardim,nao informado,nao,nao,"sim, algumas vezes",problemas de saude,problemas de saude
+edificacoes,1,menos de 15 anos,Jardim,entre 4 e 6 salarios minimos,nao,nao,nao nunca,,
+edificacoes,1,15 a 18 anos,Jardim,ate 1 salario minimo,nao,ja solicitei e aguardo reposta,nao nunca,,
+edificacoes,1,menos de 15 anos,Jardim,entre 2 e 4 salarios minimos,nao,nao,nao nunca,,
+edificacoes,1,15 a 18 anos,Jardim,ate 1 salario minimo,"sim, em meio periodo",ja solicitei e aguardo reposta,nao nunca,,
+edificacoes,1,15 a 18 anos,Guia Lopes,ate 1 salario minimo,nao,ja solicitei e aguardo reposta,nao nunca,,
+edificacoes,1,15 a 18 anos,Jardim,entre 2 e 4 salarios minimos,"sim, em meio periodo",nao,nao nunca,,
+edificacoes,1,menos de 15 anos,Guia Lopes,entre 2 e 4 salarios minimos,"nao, mas estou procurando",ja solicitei e aguardo reposta,nao nunca,,
+edificacoes,1,15 a 18 anos,Jardim,entre 1 e 2 salarios minimos,"nao, mas estou procurando",nao,nao nunca,,
+edificacoes,1,15 a 18 anos,Jardim,ate 1 salario minimo,"nao, mas estou procurando",ja solicitei e aguardo reposta,nao nunca,,
+edificacoes,1,15 a 18 anos,Jardim,nao informado,nao,nao,nao nunca,,
+edificacoes,1,15 a 18 anos,Jardim,ate 1 salario minimo,nao,nao,nao nunca,,
+edificacoes,1,15 a 18 anos,Jardim,entre 1 e 2 salarios minimos,nao,nao,nao nunca,,
+edificacoes,1,menos de 15 anos,Alto Caracol,ate 1 salario minimo,"nao, mas estou procurando",ja solicitei e aguardo reposta,nao nunca,,
+edificacoes,1,menos de 15 anos,Jardim,nao informado,nao,nao,nao nunca,,
+arquitetura,1,15 a 18 anos,Jardim,ate 1 salario minimo,"nao, mas estou procurando",ja solicitei e aguardo reposta,nao nunca,,
+arquitetura,1,15 a 18 anos,Guia Lopes,entre 1 e 2 salarios minimos,nao,nao,nao nunca,,
+arquitetura,1,mais de 40 anos,Jardim,entre 2 e 4 salarios minimos,"sim, em meio periodo",nao,nao nunca,,
+informatica,3,15 a 18 anos,Jardim,ate 1 salario minimo,"sim, em meio periodo",nao,"sim, algumas vezes",recebi uma proposta de emprego,recebi uma proposta de emprego
+informatica,3,15 a 18 anos,Guia Lopes,mais de 6 salarios minimos,"nao, mas estou procurando",nao,"sim, algumas vezes",problemas de saude,problemas de saude
+informatica,3,15 a 18 anos,Jardim,entre 4 e 6 salarios minimos,"nao, mas estou procurando",nao,nao nunca,,
+informatica,3,15 a 18 anos,Guia Lopes,entre 1 e 2 salarios minimos,nao,nao,"sim, varias vezes",dificuldade no aprendizado,Dificuldade de aprendizado
+informatica,3,15 a 18 anos,Jardim,entre 4 e 6 salarios minimos,"nao, mas estou procurando",nao,nao nunca,,
+informatica,3,15 a 18 anos,Guia Lopes,entre 1 e 2 salarios minimos,nao,nao,"sim, varias vezes",dificuldade no aprendizado,Dificuldade de aprendizado
+informatica,3,15 a 18 anos,Jardim,entre 2 e 4 salarios minimos,nao,nao,nao nunca,,
+informatica,3,15 a 18 anos,Jardim,ate 1 salario minimo,"nao, mas estou procurando",nao,"sim, algumas vezes",dificuldade no aprendizado,Dificuldade de aprendizado
+informatica,3,15 a 18 anos,Jardim,entre 1 e 2 salarios minimos,nao,ja solicitei e aguardo reposta,"sim, algumas vezes",dificuldade no aprendizado,Dificuldade de aprendizado
+arquitetura,5,19 a 24 anos,Jardim,entre 1 e 2 salarios minimos,"nao, mas estou procurando",sim,nao nunca,,
+arquitetura,5,31 a 40 anos,Guia Lopes,entre 2 e 4 salarios minimos,nao,nao,"sim, varias vezes",problemas de relacionamento com os colegas,Problemas de relacionamento com colegas
+arquitetura,1,15 a 18 anos,Jardim,ate 1 salario minimo,"sim, em meio periodo",nao,nao nunca,,
+arquitetura,1,15 a 18 anos,Jardim,entre 4 e 6 salarios minimos,nao,nao,nao nunca,,
+arquitetura,1,15 a 18 anos,Jardim,entre 4 e 6 salarios minimos,nao,ja solicitei e aguardo reposta,nao nunca,,
+arquitetura,1,19 a 24 anos,Jardim,entre 1 e 2 salarios minimos,"nao, mas estou procurando",ja solicitei e aguardo reposta,nao nunca,,
+arquitetura,1,19 a 24 anos,Jardim,entre 4 e 6 salarios minimos,nao,nao,nao nunca,,
+arquitetura,1,19 a 24 anos,Jardim,ate 1 salario minimo,nao,nao,nao nunca,,
+arquitetura,1,15 a 18 anos,Jardim,entre 2 e 4 salarios minimos,"nao, mas estou procurando",nao,nao nunca,,
+arquitetura,1,15 a 18 anos,Jardim,ate 1 salario minimo,nao,ja solicitei e aguardo reposta,nao nunca,,
+arquitetura,1,19 a 24 anos,Jardim,ate 1 salario minimo,"sim, em meio periodo",nao,nao nunca,,
+informatica,3,15 a 18 anos,Jardim,entre 2 e 4 salarios minimos,"sim, em meio periodo",ja solicitei e aguardo reposta,nao nunca,,
+informatica,3,15 a 18 anos,Nioaque,entre 2 e 4 salarios minimos,nao,nao,nao nunca,,
+informatica,3,15 a 18 anos,Jardim,entre 4 e 6 salarios minimos,nao,nao,nao nunca,,
+informatica,3,15 a 18 anos,Jardim,entre 1 e 2 salarios minimos,"sim, em meio periodo",ja solicitei e aguardo reposta,"sim, varias vezes",dificuldade de aprendizado,Dificuldade de aprendizado
+informatica,3,15 a 18 anos,Nioaque,mais de 6 salarios minimos,"nao, mas estou procurando",nao,nao nunca,,
+informatica,3,15 a 18 anos,Jardim,entre 2 e 4 salarios minimos,nao,nao,"sim, algumas vezes",dificuldade no aprendizado,Dificuldade de aprendizado
+informatica,3,15 a 18 anos,Nioaque,entre 1 e 2 salarios minimos,"nao, mas estou procurando",nao,"sim, algumas vezes",dificuldades financeiras,Dificuldades financeiras
+informatica,3,15 a 18 anos,Jardim,entre 2 e 4 salarios minimos,nao,nao,"sim, varias vezes",dificuldade no aprendizado,Dificuldade de aprendizado
+informatica,3,15 a 18 anos,Nioaque,entre 4 e 6 salarios minimos,"nao, mas estou procurando",nao,"sim, algumas vezes",dificuldade no aprendizado,Dificuldade de aprendizado
+informatica,3,15 a 18 anos,Jardim,nao informado,nao,nao,"sim, algumas vezes",dificuldade no aprendizado,Dificuldade de aprendizado
+informatica,3,15 a 18 anos,Jardim,ate 1 salario minimo,"nao, mas estou procurando",ja solicitei e aguardo reposta,"sim, algumas vezes",problemas de saude,problemas de saude
+informatica,3,15 a 18 anos,Jardim,entre 4 e 6 salarios minimos,"nao, mas estou procurando",nao,nao nunca,,
+informatica,3,15 a 18 anos,Jardim,nao informado,nao,nao,nao nunca,,
+informatica,3,15 a 18 anos,Jardim,nao informado,nao,ja solicitei e aguardo reposta,"sim, algumas vezes",dificuldade no aprendizado,Dificuldade de aprendizado
+informatica,3,15 a 18 anos,Jardim,entre 1 e 2 salarios minimos,nao,ja solicitei e aguardo reposta,nao nunca,,
+informatica,3,15 a 18 anos,Jardim,entre 2 e 4 salarios minimos,nao,sim,"sim, algumas vezes",problemas de relacioamento com os colegas,Problemas de relacionamento com colegas
+informatica,3,15 a 18 anos,Guia Lopes,entre 2 e 4 salarios minimos,"sim, em meio periodo",ja solicitei e aguardo reposta,nao nunca,,
+informatica,3,15 a 18 anos,Nioaque,entre 4 e 6 salarios minimos,"nao, mas estou procurando",nao,"sim, algumas vezes",,
+informatica,3,15 a 18 anos,Jardim,entre 1 e 2 salarios minimos,"sim, em meio periodo",nao,nao nunca,,
+informatica,3,15 a 18 anos,Guia Lopes,mais de 6 salarios minimos,nao,sim,"sim, algumas vezes",,
+informatica,3,15 a 18 anos,Jardim,nao informado,"nao, mas estou procurando",nao,nao nunca,,
+informatica,3,15 a 18 anos,Jardim,nao informado,nao,nao,nao nunca,,
+informatica,3,15 a 18 anos,Jardim,entre 2 e 4 salarios minimos,"sim, em meio periodo",nao,nao nunca,,
+edificacoes,3,15 a 18 anos,Jardim,nao informado,nao,nao,"sim, algumas vezes",dificuldade no aprendizado,Dificuldade de aprendizado
+edificacoes,3,15 a 18 anos,Jardim,nao informado,"nao, mas estou procurando",ja solicitei e aguardo reposta,nao nunca,,
+edificacoes,3,menos de 15 anos,Jardim,nao informado,nao,ja solicitei e aguardo reposta,nao nunca,,
+edificacoes,3,15 a 18 anos,Jardim,entre 2 e 4 salarios minimos,nao,nao,nao nunca,,
+edificacoes,3,15 a 18 anos,Jardim,entre 2 e 4 salarios minimos,nao,nao,nao nunca,,
+edificacoes,3,15 a 18 anos,Jardim,entre 1 e 2 salarios minimos,nao,ja solicitei e aguardo reposta,nao nunca,,
+edificacoes,3,15 a 18 anos,Jardim,ate 1 salario minimo,nao,ja solicitei e aguardo reposta,nao nunca,,
+edificacoes,3,15 a 18 anos,Jardim,ate 1 salario minimo,"nao, mas estou procurando",ja solicitei e aguardo reposta,nao nunca,,
+edificacoes,3,15 a 18 anos,Jardim,entre 4 e 6 salarios minimos,"nao, mas estou procurando",nao,"sim, varias vezes",dificuldade no aprendizado,Dificuldade de aprendizado
+edificacoes,3,menos de 15 anos,Jardim,entre 2 e 4 salarios minimos,nao,nao,"sim, algumas vezes",problemas de saude,problemas de saude
+edificacoes,3,menos de 15 anos,Jardim,entre 1 e 2 salarios minimos,"nao, mas estou procurando",nao,nao nunca,,
+edificacoes,3,menos de 15 anos,Guia Lopes,nao informado,nao,sim,nao nunca,,
+edificacoes,3,15 a 18 anos,Jardim,nao informado,"nao, mas estou procurando",nao,nao nunca,,
+edificacoes,3,15 a 18 anos,Jardim,nao informado,"nao, mas estou procurando",nao,nao nunca,,
+edificacoes,3,15 a 18 anos,Jardim,nao informado,nao,nao,nao nunca,,
+edificacoes,3,menos de 15 anos,Jardim,nao informado,nao,nao,nao nunca,,
+edificacoes,3,15 a 18 anos,Guia Lopes,ate 1 salario minimo,"nao, mas estou procurando",ja solicitei e aguardo reposta,"sim, algumas vezes",dificuldade no aprendizado,Dificuldade de aprendizado
+edificacoes,3,15 a 18 anos,Guia Lopes,entre 2 e 4 salarios minimos,nao,nao,nao nunca,,
+edificacoes,3,15 a 18 anos,Jardim,entre 1 e 2 salarios minimos,"sim, em meio periodo",nao,nao nunca,,
+edificacoes,3,15 a 18 anos,Jardim,entre 1 e 2 salarios minimos,"sim, em meio periodo",ja solicitei e aguardo reposta,"sim, algumas vezes",problema de relacionamento com os colegas,Problemas de relacionamento com colegas
+edificacoes,3,15 a 18 anos,Jardim,entre 1 e 2 salarios minimos,"sim, em meio periodo",nao,nao nunca,,
+edificacoes,3,15 a 18 anos,Jardim,entre 2 e 4 salarios minimos,"nao, mas estou procurando",nao,nao nunca,,
+edificacoes,3,15 a 18 anos,Jardim,entre 4 e 6 salarios minimos,"sim, em meio periodo",nao,nao nunca,,
+edificacoes,3,15 a 18 anos,Jardim,entre 4 e 6 salarios minimos,nao,nao,nao nunca,,
+edificacoes,3,15 a 18 anos,Jardim,entre 1 e 2 salarios minimos,nao,nao,nao nunca,,
+edificacoes,3,15 a 18 anos,Jardim,ate 1 salario minimo,nao,sim,nao nunca,,
+edificacoes,3,15 a 18 anos,Jardim,entre 2 e 4 salarios minimos,"sim, em meio periodo",sim,nao nunca,,
+edificacoes,3,15 a 18 anos,Jardim,nao informado,nao,ja solicitei e aguardo reposta,"sim, algumas vezes",dificuldade no aprendizado,Dificuldade de aprendizado
+edificacoes,3,menos de 15 anos,Jardim,entre 2 e 4 salarios minimos,nao,nao,"sim, algumas vezes",dificuldade no aprendizado,Dificuldade de aprendizado
+edificacoes,3,menos de 15 anos,Jardim,entre 4 e 6 salarios minimos,nao,ja solicitei e aguardo reposta,nao nunca,,
+edificacoes,3,menos de 15 anos,Jardim,entre 4 e 6 salarios minimos,"nao, mas estou procurando",nao,nao nunca,,
+edificacoes,3,menos de 15 anos,Jardim,ate 1 salario minimo,"sim, em meio periodo",nao,"sim, algumas vezes",dificuldade de conciliar trabalho e estudos,Dificuldade em conciliar trabalho e estudos
+edificacoes,3,15 a 18 anos,Jardim,entre 1 e 2 salarios minimos,nao,nao,nao nunca,,
+edificacoes,3,menos de 15 anos,Jardim,ate 1 salario minimo,nao,nao,nao nunca,,
