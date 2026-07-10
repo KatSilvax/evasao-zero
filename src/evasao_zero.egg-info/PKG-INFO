@@ -1,4 +1,4 @@
-Metadata-Version: 2.1
+Metadata-Version: 2.4
 Name: evasao_zero
 Version: 0.0.1
 Summary: Dashboard Preditivo de Evasão Estudantil - IFMS
@@ -22,9 +22,14 @@ Requires-Dist: huggingface-hub
 Requires-Dist: pytest>=7.0.0
 Requires-Dist: pytest-cov>=4.0.0
 Requires-Dist: seaborn>=0.12.0
-Requires-Dist: pywinpty==2.0.13
 Requires-Dist: jupyterlab>=4.0.0
 Requires-Dist: nbconvert>=7.0.0
+Requires-Dist: uv>=0.11.16
+Requires-Dist: flask>=3.0.3
+Requires-Dist: fastapi>=0.124.4
+Requires-Dist: uvicorn>=0.33.0
+Requires-Dist: python-multipart>=0.0.20
+Dynamic: license-file
 
 # 📊 EVASÃO-ZERO - Dashboard Preditivo de Evasão Estudantil
 
